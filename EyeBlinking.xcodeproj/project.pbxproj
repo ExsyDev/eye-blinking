@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69C59E1E2F7FA0A7004E1A07 /* StatisticsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E1C2F7FA0A7004E1A07 /* StatisticsEntry.swift */; };
+		69C59E1F2F7FA0A7004E1A07 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E1D2F7FA0A7004E1A07 /* TimerState.swift */; };
+		69C59E202F7FA0A7004E1A07 /* BreakMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E1B2F7FA0A7004E1A07 /* BreakMode.swift */; };
+		69C59E212F7FA0A7004E1A07 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E1A2F7FA0A7004E1A07 /* AppSettings.swift */; };
+		69C59E262F7FA0B5004E1A07 /* BlinkReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E232F7FA0B5004E1A07 /* BlinkReminderService.swift */; };
+		69C59E272F7FA0B5004E1A07 /* BreakTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E242F7FA0B5004E1A07 /* BreakTimerService.swift */; };
+		69C59E282F7FA0B5004E1A07 /* ActivityMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E222F7FA0B5004E1A07 /* ActivityMonitorService.swift */; };
+		69C59E292F7FA0B5004E1A07 /* StatisticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E252F7FA0B5004E1A07 /* StatisticsService.swift */; };
+		69C59E2E2F7FA0C3004E1A07 /* BreakOverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E2B2F7FA0C3004E1A07 /* BreakOverlayPanel.swift */; };
+		69C59E2F2F7FA0C3004E1A07 /* BreakOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E2C2F7FA0C3004E1A07 /* BreakOverlayView.swift */; };
+		69C59E302F7FA0C3004E1A07 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E2D2F7FA0C3004E1A07 /* StatisticsView.swift */; };
+		69C59E312F7FA0C3004E1A07 /* BlinkHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59E2A2F7FA0C3004E1A07 /* BlinkHintView.swift */; };
+		A10001 /* EyeBlinkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001 /* EyeBlinkingApp.swift */; };
+		A10002 /* Logger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002 /* Logger+Extensions.swift */; };
+		A10003 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20003 /* MenuBarView.swift */; };
+		A10004 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20004 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69C59E1A2F7FA0A7004E1A07 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		69C59E1B2F7FA0A7004E1A07 /* BreakMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakMode.swift; sourceTree = "<group>"; };
+		69C59E1C2F7FA0A7004E1A07 /* StatisticsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsEntry.swift; sourceTree = "<group>"; };
+		69C59E1D2F7FA0A7004E1A07 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		69C59E222F7FA0B5004E1A07 /* ActivityMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMonitorService.swift; sourceTree = "<group>"; };
+		69C59E232F7FA0B5004E1A07 /* BlinkReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkReminderService.swift; sourceTree = "<group>"; };
+		69C59E242F7FA0B5004E1A07 /* BreakTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTimerService.swift; sourceTree = "<group>"; };
+		69C59E252F7FA0B5004E1A07 /* StatisticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsService.swift; sourceTree = "<group>"; };
+		69C59E2A2F7FA0C3004E1A07 /* BlinkHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkHintView.swift; sourceTree = "<group>"; };
+		69C59E2B2F7FA0C3004E1A07 /* BreakOverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakOverlayPanel.swift; sourceTree = "<group>"; };
+		69C59E2C2F7FA0C3004E1A07 /* BreakOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakOverlayView.swift; sourceTree = "<group>"; };
+		69C59E2D2F7FA0C3004E1A07 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		A20001 /* EyeBlinkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeBlinkingApp.swift; sourceTree = "<group>"; };
+		A20002 /* Logger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extensions.swift"; sourceTree = "<group>"; };
+		A20003 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		A20004 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20010 /* EyeBlinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeBlinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20012 /* EyeBlinking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeBlinking.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000 = {
+			isa = PBXGroup;
+			children = (
+				A40001 /* EyeBlinking */,
+				A40099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40001 /* EyeBlinking */ = {
+			isa = PBXGroup;
+			children = (
+				A40002 /* App */,
+				A40003 /* Models */,
+				A40004 /* Views */,
+				A40005 /* Services */,
+				A40006 /* Utilities */,
+				A40007 /* Resources */,
+			);
+			path = EyeBlinking;
+			sourceTree = "<group>";
+		};
+		A40002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20001 /* EyeBlinkingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C59E1A2F7FA0A7004E1A07 /* AppSettings.swift */,
+				69C59E1B2F7FA0A7004E1A07 /* BreakMode.swift */,
+				69C59E1C2F7FA0A7004E1A07 /* StatisticsEntry.swift */,
+				69C59E1D2F7FA0A7004E1A07 /* TimerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20003 /* MenuBarView.swift */,
+				A20004 /* SettingsView.swift */,
+				69C59E2A2F7FA0C3004E1A07 /* BlinkHintView.swift */,
+				69C59E2B2F7FA0C3004E1A07 /* BreakOverlayPanel.swift */,
+				69C59E2C2F7FA0C3004E1A07 /* BreakOverlayView.swift */,
+				69C59E2D2F7FA0C3004E1A07 /* StatisticsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69C59E222F7FA0B5004E1A07 /* ActivityMonitorService.swift */,
+				69C59E232F7FA0B5004E1A07 /* BlinkReminderService.swift */,
+				69C59E242F7FA0B5004E1A07 /* BreakTimerService.swift */,
+				69C59E252F7FA0B5004E1A07 /* StatisticsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40006 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A20002 /* Logger+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A40007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20011 /* Info.plist */,
+				A20012 /* EyeBlinking.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20010 /* EyeBlinking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50001 /* EyeBlinking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70001 /* Build configuration list for PBXNativeTarget "EyeBlinking" */;
+			buildPhases = (
+				A60001 /* Sources */,
+				A30001 /* Frameworks */,
+				A80001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeBlinking;
+			productName = EyeBlinking;
+			productReference = A20010 /* EyeBlinking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A50001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A70002 /* Build configuration list for PBXProject "EyeBlinking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+				Base,
+			);
+			mainGroup = A40000;
+			productRefGroup = A40099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50001 /* EyeBlinking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C59E262F7FA0B5004E1A07 /* BlinkReminderService.swift in Sources */,
+				69C59E272F7FA0B5004E1A07 /* BreakTimerService.swift in Sources */,
+				69C59E282F7FA0B5004E1A07 /* ActivityMonitorService.swift in Sources */,
+				69C59E292F7FA0B5004E1A07 /* StatisticsService.swift in Sources */,
+				69C59E2E2F7FA0C3004E1A07 /* BreakOverlayPanel.swift in Sources */,
+				69C59E2F2F7FA0C3004E1A07 /* BreakOverlayView.swift in Sources */,
+				69C59E302F7FA0C3004E1A07 /* StatisticsView.swift in Sources */,
+				69C59E312F7FA0C3004E1A07 /* BlinkHintView.swift in Sources */,
+				A10001 /* EyeBlinkingApp.swift in Sources */,
+				A10002 /* Logger+Extensions.swift in Sources */,
+				A10003 /* MenuBarView.swift in Sources */,
+				69C59E1E2F7FA0A7004E1A07 /* StatisticsEntry.swift in Sources */,
+				69C59E1F2F7FA0A7004E1A07 /* TimerState.swift in Sources */,
+				69C59E202F7FA0A7004E1A07 /* BreakMode.swift in Sources */,
+				69C59E212F7FA0A7004E1A07 /* AppSettings.swift in Sources */,
+				A10004 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B20001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EyeBlinking/Resources/EyeBlinking.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeBlinking/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimkg.EyeBlinking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B20002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EyeBlinking/Resources/EyeBlinking.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeBlinking/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dimkg.EyeBlinking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70001 /* Build configuration list for PBXNativeTarget "EyeBlinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20001 /* Debug */,
+				B20002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70002 /* Build configuration list for PBXProject "EyeBlinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10001 /* Debug */,
+				B10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90001 /* Project object */;
+}

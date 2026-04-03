@@ -1,0 +1,63 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set version from tag
+        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+
+      - name: Build
+        run: |
+          xcodebuild clean archive \
+            -project EyeBlinking.xcodeproj \
+            -scheme EyeBlinking \
+            -configuration Release \
+            -archivePath build/EyeBlinking.xcarchive \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_ALLOWED=NO \
+            ONLY_ACTIVE_ARCH=NO
+
+      - name: Export app
+        run: |
+          mkdir -p build/export
+          cp -R build/EyeBlinking.xcarchive/Products/Applications/EyeBlinking.app build/export/
+
+      - name: Create DMG
+        run: |
+          mkdir -p build/dmg
+          cp -R build/export/EyeBlinking.app build/dmg/
+          ln -s /Applications build/dmg/Applications
+          hdiutil create \
+            -volname "EyeBlinking" \
+            -srcfolder build/dmg \
+            -ov \
+            -format UDZO \
+            build/EyeBlinking.dmg
+
+      - name: Create ZIP
+        run: |
+          cd build/export
+          ditto -c -k --sequesterRsrc --keepParent EyeBlinking.app ../EyeBlinking.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: v${{ env.VERSION }}
+          files: |
+            build/EyeBlinking.dmg
+            build/EyeBlinking.zip
+          body: |
+            ## Installation
+            1. Download `EyeBlinking.dmg`
+            2. Open the DMG and drag **EyeBlinking** to **Applications**
+            3. Right-click the app → **Open** (first launch only, to bypass Gatekeeper)
+
+            **Alternative:** Download `EyeBlinking.zip`, unzip, and move to Applications.

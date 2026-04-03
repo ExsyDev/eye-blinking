@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+*.xcuserdata
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# AI Factory (local context)
+.ai-factory/patches/
+.ai-factory/RESEARCH.md
+.ai-factory/FIX_PLAN.md
