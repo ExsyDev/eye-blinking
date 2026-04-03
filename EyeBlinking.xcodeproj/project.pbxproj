@@ -23,6 +23,7 @@
 		A10002 /* Logger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002 /* Logger+Extensions.swift */; };
 		A10003 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20003 /* MenuBarView.swift */; };
 		A10004 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20004 /* SettingsView.swift */; };
+		A10005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20005 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		A20010 /* EyeBlinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeBlinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20012 /* EyeBlinking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeBlinking.entitlements; sourceTree = "<group>"; };
+		A20005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		A40007 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A20005 /* Assets.xcassets */,
 				A20011 /* Info.plist */,
 				A20012 /* EyeBlinking.entitlements */,
 			);
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
